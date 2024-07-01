@@ -8,6 +8,15 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 
+app.get('/api', function (req, res) {
+    res.send('Hello World!');
+});
+
+
+app.post('/api', function (req, res) {
+    console.log(req.body)
+    res.status(200).json({app: true});
+})
 
 app.get('/', function (req, res) {
     res.send('Hello World!');
@@ -17,8 +26,6 @@ app.post('/', function (req, res) {
     console.log(req.body)
     res.status(200).json({app: true});
 })
-
-
 
 
 
