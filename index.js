@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 
 
 app.get('/api', function (req, res) {
-    res.send('Hello World!');
+    res.status(200).json('Hello World!');
 });
 
 
@@ -19,7 +19,7 @@ app.post('/api', function (req, res) {
 })
 
 app.get('/', function (req, res) {
-    res.send('Hello World!');
+    res.status(200).json('Hello World!');
 });
 
 app.post('/', function (req, res) {
