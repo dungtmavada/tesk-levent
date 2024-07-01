@@ -9,6 +9,7 @@ app.use(bodyParser.json());
 
 
 app.get('/api', function (req, res) {
+    console.log(1111111111111)
     res.status(200).json('Hello World!');
 });
 
